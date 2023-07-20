@@ -62,3 +62,14 @@ submit.addEventListener('click', () => {
   }
 });
 
+
+const emailInput = document.getElementById('email');
+
+emailInput.addEventListener('mouseover', () => {
+  emailInput.setCustomValidity(''); 
+});
+
+emailInput.addEventListener('mouseout', () => {
+  emailInput.setCustomValidity('Please enter a valid email address');
+});
+
