@@ -1,10 +1,28 @@
-const menuBtn= document.querySelector('.menu-btn');
-const navigation= document.querySelector('.navigation');
 
-menuBtn.addEventListener('click',() =>{
-     menuBtn.classList.toggle('active');
-     navigation.classList.toggle('active');
+
+$(function(){
+  const navigation = $('.navigation');
+  const openNav = $('.menu-btn');
+  const closeNav = $('.close-nav');
+
+  openNav.on('click', function(){
+    navigation.css('display', 'block');
+  });
+
+  closeNav.on('click', function(){
+    if ($(window).width() <= 1041) {
+      navigation.css('display', 'none');
+    }
+  });
+
+  // Kiểm tra kích thước màn hình khi resize để xử lý hiển thị navigation items
+  $(window).on('resize', function() {
+    if ($(window).width() > 1041) {
+      navigation.css('display', 'block');
+    }
+  });
 });
+
 
 
 /* Slide menu */
