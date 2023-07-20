@@ -7,6 +7,7 @@ menuBtn.addEventListener('click',() =>{
 });
 
 
+/* Slide menu */
 const btns= document.querySelectorAll('.nav-btn');
 const sliderVideo= document.querySelectorAll('.video-slide');
 const content= document.querySelectorAll('.content');
@@ -24,7 +25,6 @@ var sliderNav = function(manual){
         swap.classList.remove('active');
     })
 
-
     btns[manual].classList.add('active');
     sliderVideo[manual].classList.add('active');
     content[manual].classList.add('active');
@@ -36,6 +36,8 @@ btns.forEach((btn , i) =>{
     });
 });
 
+
+/* Popup menu use dialog tags */
 const method = document.getElementById('method');
 const openDialog= document.getElementById('button');
 const closeDialog = document.getElementById('closedialog');
@@ -48,6 +50,8 @@ closeDialog.addEventListener('click', ()=> {
     method.close();
 });
 
+
+/* Display arlert */
 const submit = document.getElementById('submit');
 
 submit.addEventListener('click', () => {
@@ -63,6 +67,7 @@ submit.addEventListener('click', () => {
 });
 
 
+/* Error popup */
 const emailInput = document.getElementById('email');
 
 emailInput.addEventListener('mouseover', () => {
