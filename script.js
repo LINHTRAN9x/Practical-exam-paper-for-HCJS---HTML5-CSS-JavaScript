@@ -49,6 +49,16 @@ closeDialog.addEventListener('click', ()=> {
 });
 
 const submit = document.getElementById('submit');
-submit.addEventListener('click' ,() => {
-    alert('Thông tin của bạn đã được tiếp nhận thành công!')
-})
+
+submit.addEventListener('click', () => {
+  const nameInput = document.getElementById('name');
+  const emailInput = document.getElementById('email');
+  const phoneInput = document.getElementById('phone');
+
+  if (nameInput.value.trim() === '' || emailInput.value.trim() === '' || phoneInput.value.trim() === '') {
+    alert('Vui lòng nhập đầy đủ thông tin!');
+  } else {
+    alert('Thông tin của bạn đã được tiếp nhận thành công!');
+  }
+});
+
