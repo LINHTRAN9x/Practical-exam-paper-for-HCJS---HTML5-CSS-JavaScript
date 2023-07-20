@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel website</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp" rel="stylesheet">
+    <link href="//cdn.shopify.com/s/files/1/2257/3431/t/7/assets/font-awesome.min.css?v=113312282277748132781642590502" rel="stylesheet" type="text/css" media="all">
+</head>
+<body>
+    
+    <header>
+        <a href="#" class="brand">Travel</a>
+        <div class="menu-btn"><span class="material-icons-sharp">
+            menu
+            </span></div>
+        <div class="navigation">
+            <div class="navigation-items">
+                <a href="">Home</a>
+                <a href="">About</a>
+                <a href="">Explore</a>
+                <a href="">Gallery</a>
+                <a href="">Contact</a>
+            </div>
+
+        </div>
+    </header>
+
+    <section class="home">
+        <video class="video-slide active" src="media/island.mp4" autoplay muted loop></video>
+        <video class="video-slide" src="media/densert.mp4" autoplay muted loop></video>
+        <video class="video-slide" src="media/man in forest.mp4" autoplay muted loop></video>
+        <video class="video-slide" src="media/video 4.mp4" autoplay muted loop></video>
+        <video class="video-slide" src="media/video 5.mp4" autoplay muted loop></video>
+
+
+        <div class="content active">
+            <h1>Wonderfull.<br><span>Island</span></h1>
+            <p>Wonderful Island là một đảo tuyệt vời với cảnh quan thiên nhiên tuyệt đẹp, bãi biển trắng và nước biển trong xanh. Đây là một điểm đến hấp dẫn cho du khách muốn thư giãn và tận hưởng không gian yên bình của thiên nhiên. Trên đảo, bạn có thể tham gia vào các hoạt động như tắm biển, lặn biển, lướt ván, hay đơn giản chỉ là tận hưởng không khí trong lành và cảnh quan đẹp. Ngoài ra, Wonderful Island còn có những khu nghỉ dưỡng sang trọng và tiện nghi để du khách có thể nghỉ ngơi sau những hoạt động mệt mỏi.</p>
+            <a href="#">Read More</a>
+        </div>
+        <div class="content">
+            <h1>Discover the.<br><span>Desert</span></h1>
+            <p>Trong những vùng sa mạc bát ngát, những cuộc phiêu lưu đầy mạo hiểm đang chờ đón những tâm hồn tò mò và dũng cảm. Aventur Desert, một thiên đường hoang dã nằm giữa lòng sa mạc cát bao la, hứa hẹn mang đến những trải nghiệm tuyệt vời cho những ai dám chinh phục.</p>
+            <a href="#">Read More</a>
+        </div>
+        <div class="content">
+            <h1>Challenge.<br><span>Yourself</span></h1>
+            <p>Khi bước chân vào rừng rậm, tôi cảm nhận được sự hùng vĩ và hoang dã của thiên nhiên. Những cây cổ thụ vươn cao chạm tới bầu trời, tạo nên một bức tranh tuyệt đẹp mà tôi chưa từng thấy trước đây. Những con đường mòn chằng chịt và bí ẩn đưa tôi vào những khu vực không có dấu vết của con người.</p>
+            <a href="#">Read More</a>
+        </div>
+        <div class="content">
+            <h1>The road.<br><span>Trip</span></h1>
+            <p>Thiên đường luôn ở xung quanh bạn,Hãy xách va lô đi và khám phá những điều tuyệt diệu nhất của thiên nhiên.Chúng tôi rất vui lòng hỗ trợ bạn trên mọi nẻo đường,hãy cùng tạo nên những trải nghiệm quý giá nhất cùng nhau nhé!</p>
+            <a href="#">Read More</a>
+        </div>
+        <div class="content">
+            <h1>City of.<br><span>Sea</span></h1>
+            <p>Thành phố biển đem đến không gian thư giãn tuyệt vời, với bãi biển trải dài, nước biển trong xanh và không khí trong lành. Du khách có thể tận hưởng những hoạt động thú vị như bơi, lặn, lướt ván, điều hòa mạo hiểm trên sóng biển, hoặc đơn giản là nghỉ ngơi và tắm nắng.mang đến sự trải nghiệm chuyên nghiệp và đáng nhớ cho du khách trong hành trình khám phá vẻ đẹp và sức sống của biển cả.
+
+                Ngoài ra, thành phố biển còn hấp dẫn du khách bằng những trải nghiệm văn hóa độc đáo, như thưởng thức ẩm thực địa phương đậm đà hương vị biển hay tham gia các lễ hội đặc sắc.</p>
+            <a href="#">Read More</a>
+        </div>
+
+
+        <div class="media-icons">
+            <a href="#"><i class="fa fa-facebook"></i></a>
+            <a href="#"><i class="fa fa-twitter"></i></a>
+            <a href="#"><i class="fa fa-instagram"></i></a>
+        </div>
+        <div class="slider-navigation">
+            <div class="nav-btn active"></div>
+            <div class="nav-btn"></div>
+            <div class="nav-btn"></div>
+            <div class="nav-btn"></div>
+            <div class="nav-btn"></div>
+        </div>
+    </section>
+
+    <section>
+        <div class="infomation">
+           <button id="button">Đăng Kí Thông Tin Người Dùng</button>
+
+           <dialog id="method" >
+            <form>
+                <label for="name">Họ và tên : 
+                    <input type="text" id="name" name="name" max="50" required>
+                </label>
+                <label for="email">Email :    
+                    <input type="email" id="email" placeholder="Email@">
+                </label>
+                <label for="phone">Số điện thoại :
+                    <input type="text" id="phone" required>
+                </label>
+                <label for="sex" required>Giới tính :
+                    <input type="radio" id="sex" name="sex" > Nam
+                    <input type="radio" id="sex" name="sex" > Nữ
+                </label>
+                <fieldset>
+                    <legend>Sở thích</legend>
+                    <input type="checkbox" > Thể thao
+                    <input type="checkbox"> Phim ảnh
+                    <input type="checkbox"> Đọc sách
+                    <input type="checkbox"> Âm nhạc
+                    <input type="checkbox"> Khác.
+                </fieldset>
+                <textarea name="" id="" cols="60" rows="10"> Giới thiệu về bạn?
+
+                </textarea>
+                <label class="sub">
+                <input type="submit" name="submit" id="submit" value="Submit">
+                </label>
+            </form>
+            <button id="closedialog"><span class="material-icons-sharp">
+                close
+                </span></button>
+           </dialog>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer">
+            <h1>Trần Văn Linh</h1>
+            <h3>Tranvanlinh@gmail.com</h3>
+            <p>Class: T2305M</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
