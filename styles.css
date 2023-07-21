@@ -302,6 +302,43 @@ footer{
     display: none;
 }
 
+
+/* popup xác nhận lại dữ liệu từ người dùng */
+.popup {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 998;
+    color: #fff;
+    width: 40vw;
+    height: 50vh;
+    line-height: 2;
+    text-align: center;
+    background-color: #1680ac;
+    border-radius: 10px;
+    padding-top: 10px;
+    box-shadow: 1px 1px 5px rgba(0,0,0,0.4);
+}
+#confirmBtn{
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background: #fff;
+    color: #1680ac;
+    cursor: pointer;
+}
+button#confirmBtn:hover {
+    color: #fff;
+    background: #333;
+    box-shadow: 1px 1px 5px rgba(0,0,0,0.5);
+}
+
+
+  
+  
+
 @media (max-width: 1040px){
     header{
         padding: 12px 20px;
