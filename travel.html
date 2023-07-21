@@ -85,42 +85,55 @@
 
     <section>
         <div class="infomation">
-           <button id="button">Đăng Kí Thông Tin Người Dùng</button>
-
-           <dialog id="method" >
+          <button id="button">Đăng Kí Thông Tin Người Dùng</button>
+      
+          <dialog id="method">
             <form>
-                <label for="name">Họ và tên : 
-                    <input type="text" id="name" name="name" max="50" required>
-                </label>
-                <label for="email">Email :    
-                    <input type="email" id="email" placeholder="Email@" title="Please enter a valid email address">
-                </label>
-                <label for="phone">Số điện thoại :
-                    <input type="text" id="phone" required>
-                </label>
-                <label for="sex" required>Giới tính :
-                    <input type="radio" id="sex" name="sex" > Nam
-                    <input type="radio" id="sex" name="sex" > Nữ
-                </label>
-                <fieldset>
-                    <legend>Sở thích</legend>
-                    <input type="checkbox" > Thể thao
-                    <input type="checkbox"> Phim ảnh
-                    <input type="checkbox"> Đọc sách
-                    <input type="checkbox"> Âm nhạc
-                    <input type="checkbox"> Khác.
-                </fieldset>
-                <textarea name="" id="" cols="60" rows="10" placeholder="Giới thiệu về bạn?"></textarea>
-                <label class="sub">
+              <label for="name">Họ và tên:
+                <input type="text" id="name" name="name" max="50" title="Tối đa 50 kí tự" required>
+              </label>
+              <label for="email">Email:
+                <input type="email" id="email" placeholder="Email@" title="Please enter a valid email address">
+              </label>
+              <label for="phone">Số điện thoại:
+                <input type="text" id="phone" title="Số điện thoại" required>
+              </label>
+              <label for="male">Nam:
+                <input type="radio" id="male" name="sex" value="Nam">
+              </label>
+              <label for="female">Nữ:
+                <input type="radio" id="female" name="sex" value="Nữ">
+              </label>
+              
+              <fieldset>
+                <legend>Sở thích</legend>
+                <input type="checkbox" name="interests" value="Thể thao"> Thể thao
+                <input type="checkbox" name="interests" value="Phim ảnh"> Phim ảnh
+                <input type="checkbox" name="interests" value="Đọc sách"> Đọc sách
+                <input type="checkbox" name="interests" value="Âm nhạc"> Âm nhạc
+                <input type="checkbox" name="interests" value="Khác"> Khác.
+              </fieldset>
+              <textarea name="intro" id="intro" cols="63" rows="10" placeholder="Giới thiệu về bạn?"></textarea>
+              <label class="sub">
                 <input type="submit" name="submit" id="submit" value="Submit">
-                </label>
+              </label>
             </form>
-            <button id="closedialog"><span class="material-icons-sharp">
+            <button id="closedialog">
+              <span class="material-icons-sharp">
                 close
-                </span></button>
-           </dialog>
+              </span>
+            </button>
+          </dialog>
         </div>
-    </section>
+      </section>
+      
+      <!-- Xác nhận lại dữ liệu từ người dùng-->
+      <div class="popup" id="confirmPopup">
+        <h2>Xác nhận thông tin</h2>
+        <p id="confirmInfo"></p>
+        <button id="confirmBtn">Xác nhận</button>
+      </div>
+      
 
     <footer>
         <div class="footer">
